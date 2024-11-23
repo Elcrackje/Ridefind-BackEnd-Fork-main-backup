@@ -11,8 +11,8 @@ using RideFind_BackEnd.IAM.Interfaces.ACL.Services;
 using RideFind_BackEnd.IAM.Interfaces.ACL.Services.Services;
 using RideFind_BackEnd.Profiles;
 using RideFind_BackEnd.Shared.Domain.Repositories;
-using RideFind_BackEnd.Shared.Infraestructure.Persistence.EFC.Repositories;
-using RideFind_BackEnd.Shared.Interfaces.ASP.Configuration;
+using RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Repositories;
+using RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Configuration;
 using RideFind_BackEnd.Vehicles.Application.Internal.CommandServices;
 using RideFind_BackEnd.Vehicles.Application.Internal.QueryServices;
 using RideFind_BackEnd.Vehicles.Domain.Repositories;
@@ -20,6 +20,7 @@ using RideFind_BackEnd.Vehicles.Domain.Services;
 using RideFind_BackEnd.Vehicles.Infrastructure.Persistence.EFC.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using RideFind_BackEnd.Shared.Interfaces.ASP.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 

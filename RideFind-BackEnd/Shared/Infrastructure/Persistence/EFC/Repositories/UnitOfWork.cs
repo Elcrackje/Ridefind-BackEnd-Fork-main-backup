@@ -1,7 +1,7 @@
 ﻿using RideFind_BackEnd.Shared.Domain.Repositories;
-using RideFind_BackEnd.Shared.Interfaces.ASP.Configuration;
+using RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Configuration;
 
-namespace RideFind_BackEnd.Shared.Infraestructure.Persistence.EFC.Repositories;
+namespace RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Repositories;
 
 public class UnitOfWork : IUnitOfWork
 {

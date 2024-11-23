@@ -1,6 +1,6 @@
 ﻿
-using RideFind_BackEnd.Shared.Infraestructure.Persistence.EFC.Repositories;
-using RideFind_BackEnd.Shared.Interfaces.ASP.Configuration;
+using RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Repositories;
+using RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Configuration;
 using RideFind_BackEnd.Vehicles.Domain.Model.Aggregates;
 using RideFind_BackEnd.Vehicles.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;

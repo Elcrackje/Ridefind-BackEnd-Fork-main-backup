@@ -1,5 +1,6 @@
-﻿using RideFind_BackEnd.Shared.Interfaces.ASP.Configuration.Extensions;
+﻿using RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Configuration.Extensions;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using RideFind_BackEnd.Shared.Interfaces.ASP.Configuration.Extensions;
 
 namespace RideFind_BackEnd.Shared.Interfaces.ASP.Configuration;
 

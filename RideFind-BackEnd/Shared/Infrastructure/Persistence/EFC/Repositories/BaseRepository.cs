@@ -1,8 +1,8 @@
 ﻿using RideFind_BackEnd.Shared.Domain.Repositories;
-using RideFind_BackEnd.Shared.Interfaces.ASP.Configuration;
+using RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Configuration;
 using Microsoft.EntityFrameworkCore;
 
-namespace RideFind_BackEnd.Shared.Infraestructure.Persistence.EFC.Repositories;
+namespace RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Repositories;
 
 public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
 {
