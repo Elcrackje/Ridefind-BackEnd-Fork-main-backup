@@ -99,20 +99,6 @@ builder.Services.AddSwaggerGen(
 // Configure Lowercase URLs
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
-// Add CORS Policy
-// Configurar CORS
-
-// Add services to the container.
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowFrontend", policy =>
-    {
-        policy.WithOrigins("https://ridefind-frontend-new.web.app") // URL del frontend
-            .AllowAnyHeader()
-            .AllowAnyMethod();
-    });
-});
-
 
 
 // Configure Dependency Injection
@@ -148,6 +134,22 @@ builder.Services.AddScoped<IHashingService, HashingService>();
 builder.Services.AddScoped<IIamContextFacade, IamContextFacade>();
 
 
+// Add CORS Policy
+// Configurar CORS
+
+// Add services to the container.
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("https://ridefind-frontend-new.web.app")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    });
+});
+
 var app = builder.Build();
 
 // Verify Database Objects are created
@@ -169,15 +171,6 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
     });
 }
 
-// Apply CORS Policy
-
-app.Use(async (context, next) =>
-{
-    await next.Invoke();
-    context.Response.Headers.Add("Access-Control-Allow-Origin", "https://ridefind-frontend-new.web.app/sign-in");
-    context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-    context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
-});
 
 app.UseCors("AllowFrontend");
 
