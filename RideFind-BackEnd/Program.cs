@@ -101,11 +101,13 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 // Add CORS Policy
 // Configurar CORS
+
+// Add services to the container.
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.AllowAnyOrigin() // URL del frontend
+        policy.WithOrigins("http://localhost:5183") // URL del frontend
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
