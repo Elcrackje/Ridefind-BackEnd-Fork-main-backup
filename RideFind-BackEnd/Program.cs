@@ -100,12 +100,15 @@ builder.Services.AddSwaggerGen(
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 // Add CORS Policy
+// Configurar CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAllPolicy",
-        policy => policy.AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader());
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.AllowAnyOrigin() // URL del frontend
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
 });
 
 // Configure Dependency Injection
@@ -162,7 +165,8 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
     });
 }
 
-app.UseCors("AllowAllPolicy");
+// Apply CORS Policy
+app.UseCors("AllowFrontend");
 
 // Add Authorization Middleware to Pipeline
 app.UseRequestAuthorization();
