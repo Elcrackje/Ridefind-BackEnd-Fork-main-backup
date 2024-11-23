@@ -113,6 +113,8 @@ builder.Services.AddCors(options =>
     });
 });
 
+
+
 // Configure Dependency Injection
 
 // Shared Bounded Context Injection Configuration
@@ -168,7 +170,18 @@ if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 }
 
 // Apply CORS Policy
+
+app.Use(async (context, next) =>
+{
+    await next.Invoke();
+    context.Response.Headers.Add("Access-Control-Allow-Origin", "https://ridefind-frontend-new.web.app/sign-in");
+    context.Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+    context.Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
+});
+
 app.UseCors("AllowFrontend");
+
+
 
 // Add Authorization Middleware to Pipeline
 app.UseRequestAuthorization();
