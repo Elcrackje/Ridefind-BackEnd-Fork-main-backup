@@ -15,8 +15,9 @@ public class VehicleQueryService(IVehicleRepository vehicleRepository) : IVehicl
 
     public async Task<IEnumerable<Vehicle>> Handle(GetAllVehiclesQuery query)
     {
-        return await vehicleRepository.ListAsync();
+        return await vehicleRepository.FindAllAsync();
     }
+    
 
     public async Task<IEnumerable<Vehicle>> Handle(GetAllVehiclesByCategoryIdQuery query)
     {

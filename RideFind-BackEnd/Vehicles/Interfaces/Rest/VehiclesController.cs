@@ -34,11 +34,11 @@ public class VehiclesController(
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllTutorials()
+    public async Task<IActionResult> GetAllVehicles()
     {
-        var getAllTutorialsQuery = new GetAllVehiclesQuery();
-        var tutorials = await vehicleQueryServices.Handle(getAllTutorialsQuery);
-        var resources = tutorials.Select(VehicleResourceFromEntityAssembler
+        //var getAllVehiclesQuery = new GetAllVehiclesQuery();
+        var vehicles = await vehicleQueryServices.Handle(new GetAllVehiclesQuery());
+        var resources = vehicles.Select(VehicleResourceFromEntityAssembler
             .ToResourceFromEntity);
         return Ok(resources);
     }

@@ -19,7 +19,7 @@ public class CategoriesController(
     [SwaggerOperation(
         Summary = "Creates a category",
         Description = "Creates a category with a given name",
-        OperationId = "CreateCategpry")]
+        OperationId = "CreateCategory")]
     [SwaggerResponse(201, "The category was created", typeof(CategoryResource))]
     public async Task<IActionResult> CreateCategory([FromBody] CreateCategoryResource createCategoryResource)
     {

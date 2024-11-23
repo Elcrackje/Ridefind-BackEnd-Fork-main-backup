@@ -2,7 +2,7 @@
 using RideFind_BackEnd.IAM.Interfaces.Transform;
 using Microsoft.AspNetCore.Mvc;
 
-namespace RideFind_BackEnd.IAM.Interfaces;
+namespace RideFind_BackEnd.IAM.Interfaces.rest;
 
 [ApiController]
 [Route("api/v1/[controller]")]

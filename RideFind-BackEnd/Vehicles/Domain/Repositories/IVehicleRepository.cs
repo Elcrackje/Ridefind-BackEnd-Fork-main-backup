@@ -7,4 +7,6 @@ namespace RideFind_BackEnd.Vehicles.Domain.Repositories;
 public interface IVehicleRepository : IBaseRepository<Vehicle>
 {
     Task<IEnumerable<Vehicle>> FindByCategoryIdAsync(int categoryId);
+    
+    Task<IEnumerable<Vehicle>> FindAllAsync();
 }

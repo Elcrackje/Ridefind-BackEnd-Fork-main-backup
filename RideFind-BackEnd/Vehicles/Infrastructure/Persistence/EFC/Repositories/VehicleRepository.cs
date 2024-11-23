@@ -22,4 +22,9 @@ public class VehicleRepository(AppDbContext context) : BaseRepository<Vehicle>(c
             .Where(tutorial => tutorial.CategoryId == categoryId)
             .ToListAsync();
     }
+    
+    public async Task<IEnumerable<Vehicle>> FindAllAsync()
+    {
+        return await Context.Set<Vehicle>().ToListAsync();
+    }
 }
