@@ -107,7 +107,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:5183") // URL del frontend
+        policy.WithOrigins("https://ridefind-frontend-new.web.app") // URL del frontend
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
