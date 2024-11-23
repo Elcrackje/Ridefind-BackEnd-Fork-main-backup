@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace RideFind_BackEnd.Shared.Infraestructure.Persistence.EFC.Configuration.Extensions;
+namespace RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Configuration.Extensions;
 
 public static class ModelBuilderExtensions
 {

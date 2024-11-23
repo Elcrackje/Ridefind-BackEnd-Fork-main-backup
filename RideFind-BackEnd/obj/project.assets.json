@@ -8586,20 +8586,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\josec\\.nuget\\packages\\": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programacion\\Aplicaciones Web 2024 - 2\\backend\\RideFind Backend\\AAAAAAAAAAAAAAAAAAAA\\Ridefind-BackEnd-Fork-main\\RideFind-BackEnd\\RideFind-BackEnd.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\GitHub\\Ridefind-BackEnd-Fork-main-backup\\RideFind-BackEnd\\RideFind-BackEnd.csproj",
       "projectName": "RideFind-BackEnd",
-      "projectPath": "E:\\Programacion\\Aplicaciones Web 2024 - 2\\backend\\RideFind Backend\\AAAAAAAAAAAAAAAAAAAA\\Ridefind-BackEnd-Fork-main\\RideFind-BackEnd\\RideFind-BackEnd.csproj",
-      "packagesPath": "C:\\Users\\josec\\.nuget\\packages\\",
-      "outputPath": "E:\\Programacion\\Aplicaciones Web 2024 - 2\\backend\\RideFind Backend\\AAAAAAAAAAAAAAAAAAAA\\Ridefind-BackEnd-Fork-main\\RideFind-BackEnd\\obj\\",
+      "projectPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\Ridefind-BackEnd-Fork-main-backup\\RideFind-BackEnd\\RideFind-BackEnd.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\Ridefind-BackEnd-Fork-main-backup\\RideFind-BackEnd\\obj\\",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
       "configFilePaths": [
-        "C:\\Users\\josec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8698,7 +8697,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\josec\\.dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\LENOVO\\.dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

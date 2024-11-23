@@ -1,5 +1,5 @@
-﻿using RideFind_BackEnd.Shared.Infraestructure.Persistence.EFC.Repositories;
-using RideFind_BackEnd.Shared.Interfaces.ASP.Configuration;
+﻿using RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Repositories;
+using RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Configuration;
 using Microsoft.EntityFrameworkCore;
 
 namespace RideFind_BackEnd.Profiles;

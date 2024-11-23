@@ -1,13 +1,13 @@
 ﻿using RideFind_BackEnd.IAM;
 using RideFind_BackEnd.Profiles;
 
-using RideFind_BackEnd.Shared.Infraestructure.Persistence.EFC.Configuration.Extensions;
+using RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Configuration.Extensions;
 using RideFind_BackEnd.Vehicles.Domain.Model.Aggregates;
 using RideFind_BackEnd.Vehicles.Domain.Model.Entities;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
 using Microsoft.EntityFrameworkCore;
 
-namespace RideFind_BackEnd.Shared.Interfaces.ASP.Configuration;
+namespace RideFind_BackEnd.Shared.infrastructure.Persistence.EFC.Configuration;
 
 public class AppDbContext(DbContextOptions options) : DbContext(options)
 {
